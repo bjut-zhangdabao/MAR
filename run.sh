@@ -1,0 +1,16 @@
+python main.py --model-dir ./ckpt/fb15k237/ \
+--pretrained-model ./PLMs/bert-base-uncased \
+--pooling mean \
+--lr 1e-5 --use-link-graph \
+--task FB15k237_ind \
+--batch-size 64 \
+--print-freq 20 \
+--additive-margin 0.0 \
+--finetune-t \
+--pre-batch 2 \
+--epochs 50 \
+--workers 4 \
+--max-to-keep 5 \
+--use-amp \
+--mm \
+--prefix 4
